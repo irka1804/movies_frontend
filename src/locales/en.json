@@ -1,14 +1,14 @@
 {
-	"header": {
-		"site-name": "My favorite movies"
-	},
-	"loginPage": {
-		"username": "Username",
-		"password": "Password",
-		"signIn": "Sign in",
-		"errors": {
-			"unknownUser": "User does not exists!",
-			"wrongPassword": "Wrong password."
-		}
-	}
+    "header": {
+        "site-name": "My favorite movies"
+    },
+    "loginPage": {
+        "username": "Username",
+        "password": "Password",
+        "signIn": "Sign in",
+        "errors": {
+            "unknownUser": "User does not exists!",
+            "wrongPassword": "Wrong password."
+        }
+    }
 }
