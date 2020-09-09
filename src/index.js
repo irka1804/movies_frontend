@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './styles/tailwind.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+
 
 if (!window.localStorage.getItem('users')) {
 	console.log('qwqw')

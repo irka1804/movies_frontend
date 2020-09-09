@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter, Route } from 'react-router-dom'
 
+
 // import i18n (needs to be bundled ;))
 import i18n from './i18n'
 import Header from './Header'

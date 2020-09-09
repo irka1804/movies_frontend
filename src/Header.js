@@ -7,7 +7,7 @@ function Logo() {
     const { t } = useTranslation()
 
     return (
-        <div>
+        <div className='text-lg w-full'>
             { t('header.site-name') }
         </div>
     )
@@ -34,7 +34,10 @@ class LanguageSwitcher extends React.Component {
 
     render() {
         return (
-            <button onClick={ this.changeLanguage }>
+            <button 
+                className='ml-auto bg-purple-400 px-2 rounded focus:outline-none'
+                onClick={ this.changeLanguage }
+            >
                 { this.state.language }
             </button>
         )
@@ -43,7 +46,7 @@ class LanguageSwitcher extends React.Component {
 
 function Header() {
     return (
-        <div>
+        <div className='flex bg-purple-300 rounded max-w-lg justify-items-center mx-auto p-3'>
             <Logo/>
             <LanguageSwitcher/>
         </div>

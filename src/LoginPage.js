@@ -5,7 +5,7 @@ import { withTranslation } from 'react-i18next'
 
 function Error({ error }) {
     return (
-        <div> 
+        <div className='text-red-500 text-md text-left italic my-2 mx-2'> 
             { error }
         </div>
     )
@@ -54,30 +54,41 @@ class LoginPage extends React.Component {
         const { t } = this.props
 
         return (
-            <div>
+            <div className=''>
                 <Form
                     onSubmit={ this.handleSubmit }
-
                     render={ ({ handleSubmit }) => (
-                        <form onSubmit={ handleSubmit }>
-                            <div>
-                                <label> { t('loginPage.username') } </label>
+                        <form 
+                            onSubmit={ handleSubmit } 
+                            className='w-full max-w-lg bg-white shadow-md rounded px-8 py-6 mx-auto'
+                        >
+                            <div className='flex my-4'>
+                                <label className='block text-gray-700 text-lg my-2 mx-2'> 
+                                    { t('loginPage.username') } 
+                                </label>
                                 <Field
+                                    className='shadow appearance-none border rounded w-7/12 py-2 px-3 ml-auto text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
                                     name='login'
                                     type='text'
                                     component='input'
                                 />
                             </div>
-                            <div>
-                                <label> { t('loginPage.password') } </label>
+                            <div className='flex'>
+                                <label className='block text-gray-700 text-lg text-left my-2 mx-2'> 
+                                    { t('loginPage.password') } 
+                                </label>
                                 <Field
+                                    className='shadow appearance-none border rounded w-7/12 py-2 px-3 ml-auto text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
                                     name='password'
                                     type='password'
                                     component='input'
                                 />
                             </div>
                             <Error error={ t(this.state.error) }/>
-                            <button type='submit'> 
+                            <button 
+                                className='bg-purple-300 text-black py-2 px-4 mt-4 rounded focus:outline-none'
+                                type='submit'
+                            > 
                                 { t('loginPage.signIn') }
                             </button>
                         </form>
