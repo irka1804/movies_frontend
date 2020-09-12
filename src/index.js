@@ -6,11 +6,10 @@ import * as serviceWorker from './serviceWorker';
 
 
 if (!window.localStorage.getItem('users')) {
-	console.log('qwqw')
 	window.localStorage.setItem('users', JSON.stringify([
-		{'login': 'user1', 'password': 'password1'},
-		{'login': 'user2', 'password': 'password2'},
-		{'login': 'user3', 'password': 'password3'},		
+		{'login': 'user1@m.m', 'password': 'password1'},
+		{'login': 'user2@m.m', 'password': 'password2'},
+		{'login': 'user3@m.m', 'password': 'password3'},		
 	]))
 }
 
