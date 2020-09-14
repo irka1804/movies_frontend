@@ -1,8 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './styles/tailwind.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+
+
+if (!window.localStorage.getItem('users')) {
+	window.localStorage.setItem('users', JSON.stringify([
+		{'login': 'user1@m.m', 'password': 'password1'},
+		{'login': 'user2@m.m', 'password': 'password2'},
+		{'login': 'user3@m.m', 'password': 'password3'},		
+	]))
+}
 
 ReactDOM.render(
   <React.StrictMode>

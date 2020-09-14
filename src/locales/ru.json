@@ -1,0 +1,14 @@
+{
+    "header": {
+        "site-name": "Мои любимые фильмы"
+    },
+    "loginPage": {
+        "username": "Имя пользователя",
+        "password": "Пароль",
+        "signIn": "Войти",
+        "errors": {
+            "unknownUser": "Пользователь не зарегистрирован.",
+            "wrongPassword": "Неверный пароль."
+        }
+    }
+}
