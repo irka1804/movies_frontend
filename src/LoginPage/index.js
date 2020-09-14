@@ -12,10 +12,8 @@ import Label from './Label'
 
 
 function LoginPage () {
-    const sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
 
-    const onSubmit = async ({login, password}) => {
-        sleep(300)
+    const onSubmit = ({login, password}) => {
         const users = JSON.parse(window.localStorage.getItem('users'))
         const user = users.find(u => u.login === login)
         if (!user) return { [FORM_ERROR]: 'loginPage.errors.unknownUser' }
