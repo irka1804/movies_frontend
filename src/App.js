@@ -6,6 +6,8 @@ import { BrowserRouter, Route } from 'react-router-dom'
 import i18n from './i18n'
 import Header from './Header'
 import LoginPage from './LoginPage'
+import MainPage from './MainPage'
+import SearchPage from './SearchPage'
 
 
 function App() {
@@ -14,6 +16,8 @@ function App() {
             <div className="App">
                 <Header/>
                 <Route exact path='/login' component={ LoginPage }/>
+                <Route exact path='/main' component={ MainPage }/>
+                <Route exact path='/search' component={ SearchPage }/>
             </div>
         </BrowserRouter>
     );

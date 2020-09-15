@@ -10,5 +10,12 @@
             "unknownUser": "Пользователь не зарегистрирован.",
             "wrongPassword": "Неверный пароль."
         }
+    },
+    "mainPage": {
+        "logout": "Выйти",
+        "greeting": "Привет",
+        "chooseGenres": "Выберите ваши любимые жанры",
+        "yourFavoriteMovies": "Ваши любимые фильмы",
+        "addMovie": "Добавить фильм"
     }
 }

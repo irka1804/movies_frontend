@@ -10,5 +10,12 @@
             "unknownUser": "User does not exists!",
             "wrongPassword": "Wrong password."
         }
+    },
+    "mainPage": {
+        "logout": "Logout",
+        "greeting": "Hello",
+        "chooseGenres": "Select your favorite genres",
+        "yourFavoriteMovies": "Your favorite movies",
+        "addMovie": "Add movie"
     }
 }
