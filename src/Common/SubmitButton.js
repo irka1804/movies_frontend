@@ -1,11 +1,12 @@
 import React from 'react'
 
 
-function SubmitButton({ text, onClick = () => {} }) {
+function SubmitButton({ text, disabled=false, onClick = () => {} }) {
 
     return (
         <button 
-            className='bg-purple-300 text-black py-2 px-4 rounded focus:outline-none'
+            className={ `${ disabled ? 'bg-gray-100 cursor-not-allowed' : 'bg-purple-300' } text-black py-2 px-4 mb-auto rounded focus:outline-none` }
+            disabled={ disabled }
             type='submit'
             onClick={ onClick }
         >

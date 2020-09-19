@@ -10,16 +10,17 @@ export const getGenres = (language) => api({
     url: '/genres',
     params: {
         language
-    }
+    },
 })
 
 
-export const getMovies = ({ genres, release, min_rate }) => api({
+export const getMovies = ({ genres, release, min_rate, language }) => api({
     method: 'GET',
     url: '/movies',
     params: {
         'with_genres': genres,
         'release_date.gte': release,
         'vote_average.gte': min_rate,
+        language,
     }
 })

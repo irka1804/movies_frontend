@@ -1,8 +1,8 @@
 import React from 'react'
 
 import UserMenu from './UserMenu'
-import GenresSelecting from './GenresSelecting'
-import FavMoviesControl from './FavMoviesControl'
+import GenresSelecting from '../Common/GenresSelecting'
+import FavMoviesPanel from './FavMoviesPanel'
 
 
 function MainPage({ history }) {
@@ -13,11 +13,31 @@ function MainPage({ history }) {
         history.push('/login')
     }
 
+    const [ genres, setGenres ] = React.useState(
+        JSON.parse(window.localStorage.getItem('genres')) || {}
+    )
+
+    const saveGenres = (newGenres) => {
+        window.localStorage.setItem('genres', JSON.stringify(newGenres))
+
+        setGenres({ ...newGenres })
+    }
+
+    const movies = JSON.parse(window.localStorage.getItem('movies')) || {}
+
+    const filteredMovies = (
+        Object.keys(movies).filter(
+            movieId => Object.keys(genres).every(
+                genreId => !genres[genreId].active || movies[movieId].genre_ids.includes(Number(genreId))
+            )
+        ).map(movieId => movies[movieId])
+    )
+
     return (
         <div>
             <UserMenu/>
-            <GenresSelecting/>
-            <FavMoviesControl/>
+            <GenresSelecting genres={ genres } setGenres={ saveGenres }/>
+            <FavMoviesPanel movies={ filteredMovies }/>
         </div>
     )
 }

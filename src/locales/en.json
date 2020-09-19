@@ -17,5 +17,6 @@
         "chooseGenres": "Select your favorite genres",
         "yourFavoriteMovies": "Your favorite movies",
         "addMovie": "Add movie"
-    }
+    },
+    "save": "Save it!"
 }
