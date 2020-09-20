@@ -1,7 +1,7 @@
 import React from 'react'
 
-import list from './Icons/list.png'
-import block from './Icons/block.png'
+import list from './Icons/list.ico'
+import block from './Icons/block.ico'
 import IconButton from './IconButton'
 
 
