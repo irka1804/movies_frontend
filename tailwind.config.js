@@ -2,6 +2,13 @@ module.exports = {
   plugins: [
     "postcss-import",
     "tailwindcss",
-    "autoprefixer"
+    "autoprefixer",
   ],
+  theme: {
+    extend: {
+      maxWidth: {
+        '18': '18rem',
+      },
+    },
+  },
 };

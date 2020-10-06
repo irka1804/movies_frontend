@@ -1,22 +1,24 @@
 {
-    "header": {
-        "site-name": "Мои любимые фильмы"
-    },
-    "loginPage": {
-        "username": "Имя пользователя",
-        "password": "Пароль",
-        "signIn": "Войти",
-        "errors": {
-            "unknownUser": "Пользователь не зарегистрирован.",
-            "wrongPassword": "Неверный пароль."
-        }
-    },
-    "mainPage": {
-        "logout": "Выйти",
-        "greeting": "Привет",
-        "chooseGenres": "Выберите ваши любимые жанры",
-        "yourFavoriteMovies": "Ваши любимые фильмы",
-        "addMovie": "Добавить фильм"
-    },
-    "save": "Сохранить"
+  "header": {
+    "site-name": "Мои любимые фильмы"
+  },
+  "loginPage": {
+    "username": "Имя пользователя",
+    "password": "Пароль",
+    "signIn": "Войти",
+    "errors": {
+      "unknownUser": "Пользователь не зарегистрирован.",
+      "wrongPassword": "Неверный пароль."
+    }
+  },
+  "mainPage": {
+    "logout": "Выйти",
+    "greeting": "Привет",
+    "chooseGenres": "Выберите ваши любимые жанры",
+    "yourFavoriteMovies": "Ваши любимые фильмы",
+    "addMovie": "Добавить фильм"
+  },
+  "save": "Сохранить",
+  "rating": "Рейтинг",
+  "chooseYear": "Год выхода"
 }
