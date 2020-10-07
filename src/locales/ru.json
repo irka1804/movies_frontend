@@ -14,10 +14,10 @@
   "mainPage": {
     "logout": "Выйти",
     "greeting": "Привет",
-    "chooseGenres": "Выберите ваши любимые жанры",
     "yourFavoriteMovies": "Ваши любимые фильмы",
     "addMovie": "Добавить фильм"
   },
+  "chooseGenres": "Выберите ваши любимые жанры",
   "save": "Сохранить",
   "rating": "Рейтинг",
   "chooseYear": "Год выхода"

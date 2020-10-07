@@ -39,7 +39,7 @@ function SearchPage() {
       default:
         return state
     }
-  }, {})
+  }, JSON.parse(window.localStorage.getItem('genres')) || {})
 
   useEffect(() => {
     getGenres(i18n.language).then((response) =>
