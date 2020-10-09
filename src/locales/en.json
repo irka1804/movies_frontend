@@ -1,14 +1,24 @@
 {
-    "header": {
-        "site-name": "My favorite movies"
-    },
-    "loginPage": {
-        "username": "Username",
-        "password": "Password",
-        "signIn": "Sign in",
-        "errors": {
-            "unknownUser": "User does not exists!",
-            "wrongPassword": "Wrong password."
-        }
+  "header": {
+    "site-name": "My favorite movies"
+  },
+  "loginPage": {
+    "username": "Username",
+    "password": "Password",
+    "signIn": "Sign in",
+    "errors": {
+      "unknownUser": "User does not exists!",
+      "wrongPassword": "Wrong password."
     }
+  },
+  "mainPage": {
+    "logout": "Logout",
+    "greeting": "Hello",
+    "yourFavoriteMovies": "Your favorite movies",
+    "addMovie": "Add movie"
+  },
+  "chooseGenres": "Select your favorite genres",
+  "save": "Save it!",
+  "rating": "Rating",
+  "chooseYear": "Releas year"
 }
